@@ -1,5 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6, span {
+  color: #242424;
+  text-align: center;
+  line-height: 1.25;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* NAVIGATION */
+nav {
+  height: 100px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personal__logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #234dfD;
+  margin: 0 12px;
+}
+
+.nav__link--list {
+  display: flex;
+}
+
+.nav__link--anchor {
+  color: #242424;
+  margin: 0 16px;
+  text-decoration: none;
+  font-weight: 700;
+
+}
+
+.nav__link--anchor--primary {
+  border-radius: 32px;
+  padding: 4px 12px;
+  background-color: #234dfD;
+  color: #FFF;
+  transition: all 500ms ease;
+}
+
+.nav__link--anchor--primary:hover {
+  color: black;
+  background-color: #1ca7ab;
 }
