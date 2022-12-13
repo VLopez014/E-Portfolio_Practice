@@ -24,6 +24,13 @@ li {
   list-style-type: none;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+}
 /* NAVIGATION */
 nav {
   height: 100px;
@@ -66,4 +73,17 @@ nav {
 .nav__link--anchor--primary:hover {
   color: black;
   background-color: #1ca7ab;
+}
+
+
+/* ABOUT ME */
+.color__blue {
+  color: #234dfD;
+}
+
+#about-me {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
 }
