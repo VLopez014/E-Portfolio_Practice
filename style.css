@@ -83,6 +83,11 @@ nav {
 
 
 /* ABOUT ME */
+.about-me__info {
+  display: flex;
+  flex-direction: column;
+}
+
 .color__blue {
   color: #234dfD;
 }
@@ -136,5 +141,26 @@ nav {
   padding: 0 4px;
   margin: 0 12px;
   text-decoration: none;
+
+  transition: all 500ms ease;
+}
+
+.about-me__link:hover {
+  opacity: .6;
+  font-size: 30px;
+}
+
+.about-me__img--container {
+  width: 100%;
+  max-width: 800px;
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me__img {
+  width: 80%;
 }
 
