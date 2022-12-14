@@ -31,6 +31,18 @@ li {
 .flex {
   display: flex;
 }
+
+section:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.section__title {
+  margin-bottom: 20px;
+}
 /* NAVIGATION */
 nav {
   height: 100px;
@@ -162,5 +174,59 @@ nav {
 
 .about-me__img {
   width: 80%;
+}
+
+/* TECH - STACK */
+.language__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.language__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.language {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.two__language--wrapper {
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.language__img {
+  width: 100%;
+  max-width: 100px;
+
+  transition: all 500ms ease;
+}
+
+.language:hover .language__img {
+  filter: brightness(80%);
+  opacity: 0.86;
+
+  transform: scale(0.9);
+}
+
+.language__name {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  
+  transform: scale(0);
+  transition: all 500ms ease;
+}
+
+.language:hover .language__name {
+  transform: scale(1);
 }
 
